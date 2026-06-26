@@ -150,7 +150,7 @@
 </footer>
 
 <script>
-const WA = "++60127093316";
+const WA = "+60127093316";
 const products = [
   {
     name: "Meat Mincer Machine",
