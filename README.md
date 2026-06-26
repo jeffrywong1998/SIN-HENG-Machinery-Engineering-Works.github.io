@@ -80,9 +80,7 @@
 <!-- NAV -->
 <nav>
   <div class="logo">
-    <div class="logo-icon">
-      <svg viewBox="0 0 24 24"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18L20 8.5v7L12 19.82 4 15.5v-7L12 4.18z"/></svg>
-    </div>
+    <img src="sh logo.png" alt="SIN HENG Logo" style="height:50px; width:auto;">
     <div class="logo-text">
       <h1>SIN HENG</h1>
       <p>Machinery & Engineering Works</p>
