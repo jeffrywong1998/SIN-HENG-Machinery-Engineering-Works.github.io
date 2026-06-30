@@ -153,9 +153,10 @@
 const WA = "+60127093316";
 const products = [
   {
-    name: "Meat Mincer Machine",
-    desc: "Heavy-duty electric meat mincer suitable for commercial food processing. Durable stainless steel blades for hygiene and longevity.",
-    icon: "M3 3h18v4H3zm0 5h18v4H3zm0 5h18v4H3z"
+    name: "Coconut Broker Machine",
+    desc: "Efficient coconut breaking machine designed for commercial use. Fast, safe, and durable for high-volume coconut processing needs.",
+    icon: "M3 3h18v4H3zm0 5h18v4H3zm0 5h18v4H3z",
+    img: "cctmc.png"
   },
   {
     name: "Dough Mixer Machine",
