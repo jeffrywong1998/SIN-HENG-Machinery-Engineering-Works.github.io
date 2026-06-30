@@ -191,8 +191,8 @@ products.forEach(p => {
   grid.innerHTML += `
     <div class="card">
       <div class="card-img">
-        <svg viewBox="0 0 24 24"><path d="${p.icon}"/></svg>
-      </div>
+  ${p.img ? `<img src="${p.img}" alt="${p.name}" style="width:100%;height:100%;object-fit:cover;">` : `<svg viewBox="0 0 24 24"><path d="${p.icon}"/></svg>`}
+</div>
       <div class="card-body">
         <h4>${p.name}</h4>
         <p>${p.desc}</p>
