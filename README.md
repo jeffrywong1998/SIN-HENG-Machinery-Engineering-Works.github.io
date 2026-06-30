@@ -55,6 +55,10 @@
   .card-wa{display:flex;align-items:center;gap:7px;background:#25D366;color:#fff;padding:9px 16px;border-radius:6px;font-size:13px;font-weight:600;transition:.2s;width:fit-content;}
   .card-wa:hover{background:#1ebe5d;}
   .card-wa svg{width:15px;height:15px;fill:#fff;}
+  .card-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
+  .card-video{display:flex;align-items:center;gap:6px;background:#fff;color:#1a3c5e;border:2px solid #1a3c5e;padding:8px 14px;border-radius:6px;font-size:13px;font-weight:600;transition:.2s;}
+  .card-video:hover{background:#1a3c5e;color:#fff;}
+  .card-video svg{width:14px;height:14px;}
 
   /* CONTACT */
   .contact{background:#1a3c5e;color:#fff;padding:60px 40px;text-align:center;}
@@ -156,7 +160,8 @@ const products = [
     name: "Coconut Broker Machine",
     desc: "Efficient coconut breaking machine designed for commercial use. Fast, safe, and durable for high-volume coconut processing needs.",
     icon: "M3 3h18v4H3zm0 5h18v4H3zm0 5h18v4H3z",
-    img: "cctmc.png"
+    img: "cctmc.png",
+    video: "https://youtube.com/shorts/__7VAoHT_sQ?feature=share"
   },
   {
     name: "Dough Mixer Machine",
@@ -195,6 +200,12 @@ products.forEach(p => {
           <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.116 1.526 5.845L.057 23.571a.5.5 0 0 0 .604.637l5.94-1.56A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.94 9.94 0 0 1-5.072-1.38l-.363-.216-3.767.988.999-3.657-.236-.376A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
           Enquire on WhatsApp
         </a>
+        ${p.video ? `<a class="card-video" href="${p.video}" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Watch Video
+        </a>` : ''}
+        </div>        
+        
       </div>
     </div>`;
 });
